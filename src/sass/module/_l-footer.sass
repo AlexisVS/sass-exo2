@@ -1,0 +1,49 @@
+footer
+    background-color: $color-title
+    display: flex
+    flex-direction: column
+    align-items: center
+    margin-top: 5rem
+    .footer-icon-group
+        display: flex
+        justify-content: space-between
+        width: 600px
+        padding: 4rem 0
+        .footer-icon-item--link
+            color: white
+            text-decoration: none
+            display: flex
+            align-items: center
+            font-weight: bold
+            font-size: 1.2rem
+            i
+                border-radius: 100%
+                font-size: 1.1rem
+                border: 3px solid white
+                width: 38px
+                height: 38px
+                display: flex
+                justify-content: center
+                align-items: center
+                margin-right: 1rem
+    .footer-hr
+        width: 100%
+        color: #4e4e4e
+    .footer-image-wrapper
+        width: 250px
+        img
+            width: 250px
+    .footer-text
+        color: #4e4e4e
+@media screen and ( max-width: 768px)
+    .footer-icon-group
+        display: flex
+        flex-direction: column
+        align-items: center
+        width: 100%
+        justify-content: flex-start
+        .footer-icon-item--link
+            width: 170px
+            padding: 1rem 0
+    .footer-text
+        margin-bottom: 2rem

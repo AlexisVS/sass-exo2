@@ -1,0 +1,15 @@
+@import "./l-header";
+@import "./_l-main.sass";
+@import "./l-footer";
+html,
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Ubuntu l';
+}
+input[type="button"]{
+    outline:none;
+}
+hr {
+    border: none;
+}

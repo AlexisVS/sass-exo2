@@ -1,0 +1,12 @@
+/* --------------------------------- Colors --------------------------------- */
+$color-text: rgb(82, 82, 82);
+$color-title: rgb(54, 54, 54);
+$color-topBar-point: rgb(155, 0, 158);
+
+/* ------------------------------- Typographie ------------------------------ */
+.text {
+    font-size: 1.249rem;
+    font-family: sans-serif;
+    color: $color-text;
+    line-height: 2rem;
+}

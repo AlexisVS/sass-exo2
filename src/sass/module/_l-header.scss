@@ -1,0 +1,185 @@
+.header {
+    display: flex;
+    flex-direction: column;
+
+    .header-top {
+        background-color: $color-topBar-point;
+        display: flex;
+        justify-content: center;
+        height: 50px;
+
+        .header-newsletter {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            img {
+                width: 39px;
+                position: absolute;
+                left: 13px;
+                filter: brightness(5) opacity(0.5);
+                justify-self: flex-start;
+            }
+        }
+
+        .header-newsletter-form {
+            display: flex;
+            align-items: center;
+
+            p {
+                font-size: 1.15rem;
+                color: white;
+                margin: 0;
+            }
+
+            input {
+                font-style: italic;
+                font-size: 1.05rem;
+                height: 30px;
+                margin: 0 5px;
+                border-radius: 5px;
+                border: none;
+                color: $color-text;
+            }
+
+            button {
+                border: none;
+                background-color: rgb(115, 214, 102);
+                color: white;
+                padding: 0 25px;
+                font-size: 1.1rem;
+                height: 30px;
+                border-radius: 5px;
+            }
+        }
+    }
+
+    .header-menu {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border-bottom: 1px solid lightgray;
+
+        .header-menu-left {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 500px;
+
+            & img {
+                width: 230px;
+            }
+        }
+
+        .header-menu-center {
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            width: 100%;
+            height: 130px;
+            border-right: 1px solid lightgray;
+            border-left: 1px solid lightgray;
+
+            a {
+                text-decoration: none;
+                font-family: sans-serif;
+                color: $color-title;
+                font-size: 1rem;
+                font-weight: 600;
+                display: flex;
+                justify-content: space-evenly;
+
+                &:hover {
+                    text-decoration: 3px underline $color-title;
+                }
+            }
+        }
+
+        .header-menu-right {
+            width: 500px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            a {
+                text-decoration: none;
+                font-family: sans-serif;
+                color: $color-title;
+                font-size: 1rem;
+                font-weight: 600;
+                display: flex;
+                justify-content: space-evenly;
+
+                &:hover {
+                    text-decoration: 3px underline $color-title;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width:1400px) {
+    .header {
+        .header-menu {
+            flex-direction: column;
+            border: none;
+
+            .header-menu-center {
+                order: 1;
+                border-right: none;
+                border-left: none;
+                margin-top: 4rem;
+            }
+        }
+    }
+}
+
+@media screen and (max-width:768px) {
+    .header {
+
+        .header-top {
+            height: auto;
+            flex-direction: column;
+            
+            .header-newsletter {
+                padding-top: 2rem;
+                width: 200px;
+                margin: 0 auto;
+                img {
+                    position: static;
+                    width: 200px;
+                }
+            }
+            .header-newsletter-form {
+                flex-wrap: wrap;
+                justify-content: center;
+                padding-bottom: 2rem;
+                p {
+                    margin: 0 18vw;
+                    padding-top: 2rem;
+                    padding-bottom: 1rem;
+                }
+            }
+        }
+        
+    }
+@media screen and (max-width:500px){
+    .header {
+        .header-top {
+            .header-newsletter-form {
+                p {
+                    margin: 0 auto;
+                }
+            }
+        }
+    }
+}
+    .header-menu-center {
+        margin-top: 5rem;
+        flex-direction: column;
+
+        a {
+            margin: 0.5rem 0;
+        }
+    }
+}
